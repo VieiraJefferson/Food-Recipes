@@ -1,0 +1,31 @@
+
+.section.improve-skills{
+    .col.img{
+       img{
+          width: 100%;
+       }
+       
+    }
+    .col.typography{
+       padding-left: 1em;
+       .skill-item{
+          border-left: .2em solid var(--primary-color);
+          margin-bottom: .5em;
+          padding: .1em 0 .1em .5em;
+          color: var(--text-light);
+          font-weight: bold;
+          transform: translateX(100%);
+          opacity: 0;
+          animation: getAnimationDuration(.3s)slideInRight forwards;
+          @for $i from 1 through 7 {
+             &:nth-child(#{$i}){
+                animation-delay: #{$i * .2}s ;
+             }
+          }
+       }
+       .btn{
+          margin-top: 0.75em;
+ 
+       }
+    }
+ }
