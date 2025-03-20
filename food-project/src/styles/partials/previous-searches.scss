@@ -2,9 +2,10 @@
 .previous-searches{
     display: block;
     h2{
-       
+       font-size: 2.3em;
        color: var(--text-color);
        margin-bottom: .5em;
+       margin-top: 3vh;
     }
     .previous-searches-container{
        .search-item{
@@ -18,28 +19,69 @@
           transform: translateX(100%);
           opacity: 0;
           animation:getAnimationDuration(.5s) slideInRight forwards;
+          font-size: 1.4em; // Tamanho da fonte base
+          min-width: 100px; // Largura mínima para evitar que fiquem muito pequenos
+          text-align: center; // Centraliza o texto
+         
+
+          @media (max-width: 768px) {
+            font-size: 0.9em; // Reduz o tamanho da fonte
+            padding: 0.4em 0.8em; // Reduz o padding
+            min-width: 80px; // Reduz a largura mínima
+          }
+    
+          @media (max-width: 480px) {
+            font-size: 0.8em; // Reduz ainda mais o tamanho da fonte
+            padding: 0.3em 0.6em; // Reduz o padding
+            min-width: 70px; // Reduz a largura mínima
+          }
        }
     }
  
-    .search-box{
-       display: flex;
-       align-items: center;
-       justify-content: flex-end;
-       height: 40px;
-       input, .btn{
-          height: 35px;
-       }
-       input{
-          min-width: 250px;
-          padding: 0  .5em;
-          border-radius: 5px 0 0 5px;
-          outline: none;
-          border: 1px solid #4d4d4d;
-       }
-       .btn{
-          padding-block: 0;
-          padding-inline: .75em;
-          border-radius: 0 5px 5px 0;
-       }
-    }
+   //  .search-box{
+   //     display: flex;
+   //     align-items: center;
+   //     justify-content: flex-end;
+   //     height: 40px;
+   //     input, .btn{
+   //        height: 35px;
+   //     }
+   //     input{
+   //        min-width: 250px;
+   //        padding: 0  .5em;
+   //        border-radius: 5px 0 0 5px;
+   //        outline: none;
+   //        border: 1px solid #4d4d4d;
+   //     }
+   //     .btn{
+   //        padding-block: 0;
+   //        padding-inline: .75em;
+   //        border-radius: 0 5px 5px 0;
+   //     }
+   //  }
+   .search-box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 2.5rem; // Responsivo baseado no tamanho da fonte
+   
+      input, .btn {
+         height: 2.2rem; // Mantém a altura proporcional
+      }
+   
+      input {
+         min-width: clamp(10rem, 50vw, 25rem); // Adapta entre 160px e 400px
+         padding: 0 0.5em;
+         border-radius: 0.3rem 0 0 0.3rem;
+         outline: none;
+         border: 1px solid #4d4d4d;
+      }
+   
+      .btn {
+         padding-block: 0;
+         padding-inline: 0.75em;
+         border-radius: 0 0.3rem 0.3rem 0;
+      }
+   }
+   
  }

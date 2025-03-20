@@ -1,23 +1,77 @@
 
-.footer{
-    background-color: #0f0f0f;
-    color: #fff;
-    padding-block: 3em;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-gap: 1em;
-    .footer-section{
-       p{
-          opacity: .9;
-          margin-bottom: .5em;
-       }
-       p.title{
-          opacity: 1;
-          font-size: 1.1em;
-          font-weight: bold;
-          margin-bottom: 1em;
+// .footer{
+//     background-color: #0f0f0f;
+//     color: #fff;
+//     padding-block: 3em;
+//     display: grid;
+//     grid-template-columns: 2fr 1fr 1fr;
+//     grid-gap: 1em;
+//     .footer-section{
+//        p{
+//           opacity: .9;
+//           margin-bottom: .5em;
+//        }
+//        p.title{
+//           opacity: 1;
+//           font-size: 1.1em;
+//           font-weight: bold;
+//           margin-bottom: 1em;
          
-          ;
+//           ;
+//        }
+//     }
+//  }   
+
+
+.footer {
+   background-color: #0f0f0f;
+   color: #fff;
+   padding-block: 3em;
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr; /* Layout padrão: 3 colunas */
+   grid-gap: 1em;
+}
+
+.footer-section {
+   p {
+       opacity: 0.9;
+       margin-bottom: 0.5em;
+       font-size: 1.2em;
+   }
+
+   p.title {
+       opacity: 1;
+       font-size: 1.8em;
+       font-weight: bold;
+       margin-bottom: 1em;
+   }
+}
+
+/* Media Query para telas médias (tablets) */
+@media (max-width: 768px) {
+   .footer {
+       grid-template-columns: 1fr 1fr; /* 2 colunas em telas menores */
+       padding-block: 2em; /* Reduz o padding vertical */
+   }
+
+   .footer-section {
+       p.title {
+           font-size: 1em; /* Reduz o tamanho da fonte do título */
        }
-    }
- }
+   }
+}
+
+/* Media Query para telas pequenas (celulares) */
+@media (max-width: 480px) {
+   .footer {
+       grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+       padding-block: 1.5em; /* Reduz ainda mais o padding vertical */
+       text-align: center; /* Centraliza o conteúdo */
+   }
+
+   .footer-section {
+       p.title {
+           font-size: 0.9em; /* Reduz ainda mais o tamanho da fonte do título */
+       }
+   }
+}

@@ -1,5 +1,9 @@
 
 .section.improve-skills{
+   max-width: 1200px; // Define um tamanho máximo para a seção
+   margin: 0 auto; // Centraliza a seção na tela
+   padding: 0 20px; // Adiciona um padding lateral para telas menores
+ 
     .col.img{
        img{
           width: 100%;
@@ -7,6 +11,14 @@
        
     }
     .col.typography{
+      h1{
+         font-size: 3.2rem;
+         
+      }
+      p{
+         font-size: 1.5rem;
+         margin-top: .1em;
+      }
        padding-left: 1em;
        .skill-item{
           border-left: .2em solid var(--primary-color);
@@ -27,5 +39,19 @@
           margin-top: 0.75em;
  
        }
+    }
+    @media (max-width: 768px) {
+      flex-direction: column; // Empilha a imagem e o texto verticalmente
+      gap: 1em; // Adiciona espaçamento entre os elementos
+  
+      .col.img {
+        order: -1; // Coloca a imagem acima do texto
+        text-align: center; // Centraliza a imagem
+      }
+  
+      .col.typography {
+        padding-left: 0; // Remove o padding lateral
+        text-align: center; // Centraliza o texto
+      }
     }
  }

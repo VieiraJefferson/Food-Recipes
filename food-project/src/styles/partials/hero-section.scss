@@ -1,5 +1,16 @@
 .section.hero{
+   max-width: 1200px; // Define um tamanho máximo para a seção
+   margin: 0 auto; // Centraliza a seção na tela
+   padding: 0 20px; // Adiciona um padding lateral para telas menores
     .typography{
+         h1{
+            font-size: 3.2rem;
+            
+         }
+         p{
+            font-size: 1.5rem;
+            margin-top: .1em;
+         }
        padding-right: 1em;
        .btn{
          margin-top: .75em;
@@ -41,5 +52,17 @@
           }
        }
     }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr); // Reduz para 2 colunas em telas menores
+      gap: 1em; // Reduz o espaçamento entre as imagens
+    }
+   
+    
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr; // Uma coluna em telas muito pequenas
+    }
+    
  }
  
+

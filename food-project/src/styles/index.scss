@@ -167,7 +167,7 @@ img{
 
 
 .container {
-  padding-inline: 25vw;
+  padding-inline: 8vw;
   font-family: "Nunito", serif;
 }
 
@@ -175,13 +175,13 @@ img{
 
 @media screen and (max-width: 1280px){
    .container{
-      padding-inline: 18vw;
+      padding-inline: 12vw;
    }
 }
 
 @media screen and (max-width: 1050px){
    .container{
-      padding-inline: 12vw;
+      padding-inline: 8vw;
    }
 }
 
@@ -221,9 +221,9 @@ img{
    box-shadow: 0 5px 10px var(--shadow-color);
  }
 
-  .container{
-   padding-inline: 6vw;
- }
+//   .container{
+//    padding-inline: 6vw;
+//  }
  .footer{
    grid-template-columns: repeat(4, 1fr);
    .footer-section:nth-child(1){

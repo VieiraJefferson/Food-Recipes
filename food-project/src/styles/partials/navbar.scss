@@ -1,5 +1,5 @@
 .navbar{
-    height: 55px;
+    height: 12vh;
     box-shadow: 0 3px 6px var(--shadow-color);
     background-color:  var(--background-color);
     color: var(--text-color);
@@ -12,7 +12,7 @@
     z-index: 998;
 
     .logo{
-       font-size: 1.5em;
+       font-size: 2.2em;
        font-weight: bolder;
        color: var(--primary-color);
        text-shadow: 0 1px 3px var(--shadow-color);
@@ -31,7 +31,7 @@
        letter-spacing : 2px;
        text-transform: uppercase;
        position: relative;
-       font-size: .9em ;
+       font-size: 1.4em ;
        &::before{
           content: "";
           display: inline-block;
