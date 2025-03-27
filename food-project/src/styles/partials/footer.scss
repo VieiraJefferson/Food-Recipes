@@ -18,6 +18,32 @@
     font-size: 0.9em;
     opacity: 0.8;
   }
+    /* Adicione isso fora dos media queries */
+    .socials {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-start;
+        margin-top: 1rem;
+      
+          .facebook-icon {
+            color: #1877F2 ;
+            font-size: 2em ; 
+          }
+          
+          /* X/Twitter */
+          .x-twitter-icon {
+            color: #ffffff ;
+            font-size: 2em ;
+          }
+          
+          /* Instagram */
+          .instagram-icon {
+            color: #fdf497 ; 
+            font-size: 2em ;
+           }
+         
+        
+      }
 }
 
 .footer-section {
@@ -33,6 +59,7 @@
        font-weight: bold;
        margin-bottom: 1em;
    }
+   
 }
 
 /* Media Query para telas médias (tablets) */
@@ -49,6 +76,10 @@
        p.title {
            font-size: 1.4em; /* Reduz o tamanho da fonte do título */
        }
+       svg {
+        font-size: 1em; /* Tamanho ideal para mobile */
+        margin: 0.05em; /* Espaçamento entre os ícones */
+      }
    }
    
 }
@@ -93,4 +124,9 @@
         margin: 0;
       }
    }
+   
 }
+
+
+
+

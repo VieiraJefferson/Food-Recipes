@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faFacebook,faXTwitter, faInstagram }from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -22,9 +24,9 @@ function Footer() {
         <div className="footer-section ">
             <p className="title-socials">Socials</p>
             <div className="socials">
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>Instagram</p>
+            <FontAwesomeIcon className='facebook-icon' icon={faFacebook} />
+          <FontAwesomeIcon className='x-twitter-icon' icon={faXTwitter} />
+          <FontAwesomeIcon className='instagram-icon' icon={faInstagram} />
             </div>   
 
             <div >

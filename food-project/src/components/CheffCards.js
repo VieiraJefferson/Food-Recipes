@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFacebook,faTwitter, faInstagram }from '@fortawesome/free-brands-svg-icons';
+import {faSquareFacebook,faXTwitter, faInstagram }from '@fortawesome/free-brands-svg-icons';
 
 function CheffCards({cheff}) {
   return (
@@ -11,8 +11,8 @@ function CheffCards({cheff}) {
         <p className="cheff-recipe-count">Recipes: <b>{cheff.recipeCount} </b> </p>
         <p className="cheff-cuisine">Cuisine: <b>{cheff.cuisine} </b> </p>
         <p className="cheff-icons">
-                <FontAwesomeIcon icon={faFacebook}/>
-                <FontAwesomeIcon icon={faTwitter}/>
+                <FontAwesomeIcon icon={faSquareFacebook}/>
+                <FontAwesomeIcon icon={faXTwitter}/>
                 <FontAwesomeIcon icon={faInstagram}/>
         </p>
         </div>
