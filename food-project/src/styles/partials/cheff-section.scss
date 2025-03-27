@@ -1,7 +1,12 @@
 
 .section.cheffs{
     display: block;
- 
+    h1 {
+      font-size: 2.5em;
+      color: var(--text-color);
+      margin-bottom: 1em;
+      text-align: center;
+  }
     
  }
  
@@ -23,6 +28,7 @@
        width: 120px;
        border-radius: 5px;
        box-shadow:0 3px 6px var(--shadow-color) ;
+       object-fit: cover;
     }
  
     .cheff-card-info{
@@ -64,3 +70,69 @@
  
  }
  
+
+ /* 🔥 Media Queries para Telas Menores */
+@media screen and (max-width: 768px) {
+   .section.cheffs {
+       h1 {
+           font-size: 2.2em; /* Reduz o tamanho do título */
+           margin-bottom: 0.8em;
+       }
+       
+   }
+   
+   .top-cheffs-container {
+       grid-gap: 1em; /* Reduz o espaçamento entre os cards */
+   }
+   
+   .cheff-card {
+       height: 100px; /* Reduz a altura do card */
+       
+       img {
+           width: 100px; /* Reduz a imagem do chef */
+       }
+       
+       .cheff-card-info {
+           .cheff-card-name {
+               font-size: 1.2em; /* Reduz o nome do chef */
+           }
+           
+           .cheff-recipe-count, 
+           .cheff-cuisine {
+               font-size: 1em; /* Reduz textos secundários */
+           }
+           
+           .cheff-icons {
+               font-size: 1em; /* Reduz ícones */
+           }
+       }
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .section.cheffs {
+       h1 {
+           font-size: 2.2em; /* Título ainda menor para celulares pequenos */
+       }
+   }
+   
+   .top-cheffs-container {
+       grid-template-columns: 1fr; /* Muda para 1 coluna em telas muito pequenas */
+   }
+   
+   .cheff-card {
+       flex-direction: column; /* Opcional: muda layout para vertical */
+       height: auto;
+       
+       img {
+         //   width: 100%;
+         //   height: auto;
+         width: 405px;
+         height: 230px; /* Força tamanho fixo */
+         object-fit: cover; /* Recorta a imagem sem distorcer */
+         object-position: center; /* Garante que o rosto do chef fique visível */
+
+
+       }
+   }
+}

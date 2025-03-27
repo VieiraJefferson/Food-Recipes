@@ -1,5 +1,5 @@
 .navbar{
-    height: 12vh;
+    height: 10vh;
     box-shadow: 0 3px 6px var(--shadow-color);
     background-color:  var(--background-color);
     color: var(--text-color);
@@ -141,3 +141,30 @@
           }
        }
       }
+
+
+      
+/* 🔥 Media Query para Telas Menores (Mobile) */
+@media screen and (max-width: 768px) {
+   .navbar {
+       height: 7vh; /* Reduz a altura da NavBar */
+       padding: 0 1em; /* Adiciona um espaçamento lateral */
+
+       .logo {
+           font-size: 1.8em; /* Reduz o tamanho do logo */
+       }
+
+       .nav-links {
+           display: none; /* Esconde os links em mobile */
+       }
+
+       .sidebar-btn {
+           display: block; /* Mostra o botão do menu hamburguer */
+       }
+   }
+
+   /* Sidebar aberto (opcional) */
+   .sidebar.active {
+       display: block; /* Garante que o sidebar apareça quando aberto */
+   }
+}

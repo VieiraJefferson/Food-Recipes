@@ -2,13 +2,13 @@
    max-width: 1200px; // Define um tamanho máximo para a seção
    margin: 0 auto; // Centraliza a seção na tela
    padding: 0 20px; // Adiciona um padding lateral para telas menores
-    .typography{
+   .col.typography{
          h1{
-            font-size: 3.2rem;
+            font-size: 2.8rem;
             
          }
          p{
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin-top: .1em;
          }
        padding-right: 1em;
@@ -56,13 +56,33 @@
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr); // Reduz para 2 colunas em telas menores
       gap: 1em; // Reduz o espaçamento entre as imagens
+      h1{
+         font-size: 2.1rem;
+      }
+      p{
+         font-size: .9rem;
+      }
     }
    
     
     @media (max-width: 480px) {
       grid-template-columns: 1fr; // Uma coluna em telas muito pequenas
     }
-    
+   .typography{
+      margin-top: 2.6em;
+      h1{
+         font-size: 2.2rem;
+         
+      }
+      p{
+         font-size: 1.1rem;
+         margin-top: .1em;
+      }
+    padding-right: 1em;
+    .btn{
+      margin-top: .75em;
+    }
+ }
  }
  
 

@@ -10,7 +10,7 @@ function Footer() {
                 recepies of all cuisine. And our service is 
                 absolutely free
             </p>
-            <p>&copy;  2021 | All Rights Reserved</p>
+           
         </div>
         <div className="footer-section">
             <p className="title">ContactUs</p>
@@ -19,13 +19,20 @@ function Footer() {
             <p>3929 Street NY</p>
            
         </div>
-        <div className="footer-section">
-            <p className="title">Socials</p>
+        <div className="footer-section ">
+            <p className="title-socials">Socials</p>
+            <div className="socials">
             <p>Facebook</p>
             <p>Twitter</p>
             <p>Instagram</p>
+            </div>   
+
+            <div >
+           
+            </div>
            
         </div>
+       
         </div>
   )
 }

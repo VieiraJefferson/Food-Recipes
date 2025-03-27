@@ -11,8 +11,9 @@
        
     }
     .col.typography{
+      margin-top: 5vh;
       h1{
-         font-size: 3.2rem;
+         font-size: 2.2rem;
          
       }
       p{
@@ -47,11 +48,43 @@
       .col.img {
         order: -1; // Coloca a imagem acima do texto
         text-align: center; // Centraliza a imagem
+        margin-bottom: 0;
       }
   
       .col.typography {
+         margin-top: 1.3em;
         padding-left: 0; // Remove o padding lateral
         text-align: center; // Centraliza o texto
+        h1{
+         font-size: 2.2rem;
+         
       }
+      p{
+         font-size: 1.1rem;
+         margin-top: .1em;
+      }
+        .skill-item {
+         margin-left: 10vw;
+         display: flex;
+         align-items: center;
+          border-left: .2em solid var(--primary-color); 
+          transform: translateX(100%);
+          padding: .1em 0 .1em .5em;
+          opacity: 0; 
+          animation: getAnimationDuration(.3s)slideInRight forwards;
+          @for $i from 1 through 7 {
+             &:nth-child(#{$i}){
+                animation-delay: #{$i * .2}s ;
+             }
+          }
+          margin-bottom: 0.5em; // Adiciona espaçamento entre os itens
+          color: var(--text-light);
+        }
+        .btn{
+          margin-top: 1.2em;
+          margin-bottom: 0;
+        }
+      }
+     
     }
  }
