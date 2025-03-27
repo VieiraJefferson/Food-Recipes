@@ -15,7 +15,27 @@
          }
        padding-right: 1em;
        .btn{
-         margin-top: .75em;
+         // margin-top: .75em; 
+         
+            /* Estilos base */
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            
+            &:hover {
+              background-color: var(--text-light);
+              transform: scale(1.05);
+            }
+            
+            &:active {
+              transform: scale(0.98);
+            }
+          
        }
     }
     .gallery{
@@ -72,7 +92,7 @@
       grid-template-columns: 1fr; // Uma coluna em telas muito pequenas
     }
    .typography{
-      margin-top: 2.6em;
+   
       h1{
          font-size: 2.2rem;
          
