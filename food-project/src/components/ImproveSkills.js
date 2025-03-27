@@ -13,7 +13,7 @@ function ImproveSkills() {
   return (
     <div className="section improve-skills">
       <div className="col img">
-        <img src="/Galery/img/img_10.jpg"alt=""  
+        <img src="/gallery/img/img_10.jpg"alt=""  
         />
       </div>
       <div className="col typography">

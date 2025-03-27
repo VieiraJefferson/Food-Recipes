@@ -3,7 +3,7 @@
    max-width: 1200px; // Define um tamanho máximo para a seção
    margin: 0 auto; // Centraliza a seção na tela
    padding: 0 20px; // Adiciona um padding lateral para telas menores
- 
+   box-sizing: border-box;
     .col.img{
        img{
           width: 100%;
@@ -35,6 +35,7 @@
                 animation-delay: #{$i * .2}s ;
              }
           }
+          
        }
        .btn{
           margin-top: 0.75em;

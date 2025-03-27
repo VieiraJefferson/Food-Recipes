@@ -4,15 +4,15 @@ import CustomImage from "./CustomImage";
 function HeroSection() {
 
     const images=[
-        "/Galery/img/img_1.jpg",
-        "/Galery/img/img_2.jpg",
-        "/Galery/img/img_3.jpg",
-        "/Galery/img/img_4.jpg",
-        "/Galery/img/img_5.jpg",
-        "/Galery/img/img_6.jpg",
-        "/Galery/img/img_7.jpg",
-        "/Galery/img/img_8.jpg",
-        "/Galery/img/img_9.jpg",
+        "/gallery/img/img_1.jpg",
+        "/gallery/img/img_2.jpg",
+        "/gallery/img/img_3.jpg",
+        "/gallery/img/img_4.jpg",
+        "/gallery/img/img_5.jpg",
+        "/gallery/img/img_6.jpg",
+        "/gallery/img/img_7.jpg",
+        "/gallery/img/img_8.jpg",
+        "/gallery/img/img_9.jpg",
        
       
     ]

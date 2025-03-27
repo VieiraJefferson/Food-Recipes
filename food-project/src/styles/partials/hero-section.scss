@@ -1,7 +1,9 @@
 .section.hero{
-   max-width: 1200px; // Define um tamanho máximo para a seção
-   margin: 0 auto; // Centraliza a seção na tela
+   max-width: 1200px; // Define um tamanho máximo para a seção // Centraliza a seção na tela
+   margin-top: 10vh;
    padding: 0 20px; // Adiciona um padding lateral para telas menores
+   overflow: hidden; // Impede que a grid cause scroll
+   width: 100%;
    .col.typography{
          h1{
             font-size: 2.8rem;
@@ -51,18 +53,19 @@
              animation-delay: .8s;
           }
        }
+       @media (max-width: 768px) {
+         grid-template-columns: repeat(2, 1fr); // Reduz para 2 colunas em telas menores
+         gap: 1em; // Reduz o espaçamento entre as imagens
+         h1{
+            font-size: 2.1rem;
+         }
+         p{
+            font-size: .9rem;
+         }
+       }
     }
 
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr); // Reduz para 2 colunas em telas menores
-      gap: 1em; // Reduz o espaçamento entre as imagens
-      h1{
-         font-size: 2.1rem;
-      }
-      p{
-         font-size: .9rem;
-      }
-    }
+   
    
     
     @media (max-width: 480px) {

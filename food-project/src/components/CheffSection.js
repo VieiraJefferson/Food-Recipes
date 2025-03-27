@@ -5,37 +5,37 @@ function CheffSection() {
   const cheffs= [
         {
           name:"Juan Carlos",
-          img: "/Galery/top-chefs/img_1.jpg",
+          img: "/gallery/top-chefs/img_1.jpg",
           recipeCount:"10",
           cuisine: "Mexican",
         },
         {
           name:"Jhon Doe",
-          img: "/Galery/top-chefs/img_2.jpg",
+          img: "/gallery/top-chefs/img_2.png",
           recipeCount:"05",
           cuisine: "Japanese",
         },
         {
           name:"Erich Maria",
-          img: "/Galery/top-chefs/img_3.jpg",
+          img: "/gallery/top-chefs/img_3.png",
           recipeCount:"13",
           cuisine: "Italian",
         },
         {
           name:"Chris Brown",
-          img: "/Galery/top-chefs/img_4.jpg",
+          img: "/gallery/top-chefs/img_4.jpg",
           recipeCount:"08",
           cuisine: "Mexican",
         },
         {
           name:"Blake Lively",
-          img: "/Galery/top-chefs/img_5.jpg",
+          img: "/gallery/top-chefs/img_5.jpg",
           recipeCount:"09",
           cuisine: "French",
         },
         {
           name:"Ben Akors",
-          img: "/Galery/top-chefs/img_6.jpg",
+          img: "/gallery/top-chefs/img_6.jpg",
           recipeCount:"04",
           cuisine: "Indian",
         },

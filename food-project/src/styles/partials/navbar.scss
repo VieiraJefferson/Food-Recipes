@@ -1,3 +1,11 @@
+html, body {
+   overflow-x: hidden; /* Impede scroll horizontal */
+   width: 100%; /* Garante largura total */
+   margin: 0;
+   padding: 0;
+ }
+ 
+
 .navbar{
     height: 10vh;
     box-shadow: 0 3px 6px var(--shadow-color);
@@ -10,7 +18,8 @@
     width: 100%;
     top: 0;
     z-index: 998;
-
+    box-sizing: border-box;
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse */
     .logo{
        font-size: 2.2em;
        font-weight: bolder;
@@ -161,10 +170,18 @@
        .sidebar-btn {
            display: block; /* Mostra o botão do menu hamburguer */
        }
-   }
+   }  
+   
 
    /* Sidebar aberto (opcional) */
    .sidebar.active {
        display: block; /* Garante que o sidebar apareça quando aberto */
    }
+   .sidebar {
+      width: 100%; /* Ocupa toda a largura em mobile */
+      max-width: 260px; /* Mas não ultrapassa 260px */
+      
+      /* Adicione isso para evitar vazamento */
+      box-shadow: 0 0 0 100vmax rgba(0,0,0,0.2);
+    }
 }
