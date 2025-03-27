@@ -1,5 +1,6 @@
 
 .previous-searches{
+   margin-top: 10vh;
     display: block;
     h2{
        font-size: 2.3em;
@@ -38,27 +39,6 @@
        }
     }
  
-   //  .search-box{
-   //     display: flex;
-   //     align-items: center;
-   //     justify-content: flex-end;
-   //     height: 40px;
-   //     input, .btn{
-   //        height: 35px;
-   //     }
-   //     input{
-   //        min-width: 250px;
-   //        padding: 0  .5em;
-   //        border-radius: 5px 0 0 5px;
-   //        outline: none;
-   //        border: 1px solid #4d4d4d;
-   //     }
-   //     .btn{
-   //        padding-block: 0;
-   //        padding-inline: .75em;
-   //        border-radius: 0 5px 5px 0;
-   //     }
-   //  }
    .search-box {
       display: flex;
       align-items: center;
