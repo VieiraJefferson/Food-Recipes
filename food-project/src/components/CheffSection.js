@@ -11,13 +11,13 @@ function CheffSection() {
         },
         {
           name:"Jhon Doe",
-          img: "/gallery/top-chefs/img_2.png",
+          img: "/gallery/top-chefs/img_2.jpg",
           recipeCount:"05",
           cuisine: "Japanese",
         },
         {
           name:"Erich Maria",
-          img: "/gallery/top-chefs/img_3.png",
+          img: "/gallery/top-chefs/img_3.jpg",
           recipeCount:"13",
           cuisine: "Italian",
         },
@@ -47,12 +47,7 @@ function CheffSection() {
     <div className="section cheffs">
         <h1 className="title">Our top Cheff's</h1>
           <div className="top-cheffs-container">
-              {/* <CheffCards/>
-              <CheffCards/>
-              <CheffCards/>
-              <CheffCards/>
-              <CheffCards/>
-              <CheffCards/> */}
+           
               {cheffs.map(cheff=><CheffCards key={cheff.name} cheff={cheff}/>
                )
               }
